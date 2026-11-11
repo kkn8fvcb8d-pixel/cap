@@ -1,0 +1,14 @@
+
+#mapBox{position:relative}
+#oshiEmbeddedAddressMap[hidden]{display:none!important}
+#oshiEmbeddedAddressMap{
+ position:absolute;inset:0;z-index:1200;overflow:hidden;display:flex;flex-direction:column;
+ background:#fffaf7;border:2px solid #eec1d1;border-radius:17px;
+ box-shadow:0 6px 24px #6f415226;
+}
+.oshi-embedded-map-header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px 3px}
+.oshi-embedded-map-title{font-weight:900;color:#684556;font-size:14px}
+.oshi-embedded-map-close{border:0;border-radius:50%;width:31px;height:31px;background:#ffced8;color:#684556;font-size:24px;cursor:pointer;flex-shrink:0}
+.oshi-embedded-map-caption{margin:0;padding:0 14px 9px;color:#876a77;font-size:11px;line-height:1.4}
+#oshiEmbeddedAddressMap iframe{border:0;display:block;width:100%;flex:1;min-height:230px;background:#f5f0ec}
+@media(max-width:600px){.oshi-embedded-map-title{font-size:12px}.oshi-embedded-map-caption{font-size:10px}}
