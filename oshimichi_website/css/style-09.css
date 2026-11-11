@@ -1,8 +1,0 @@
-
-#spotMap{min-height:520px}
-.oshi-kim-location-control{position:absolute;z-index:550;bottom:18px;left:15px;right:15px;max-width:370px;border-radius:16px;border:1px solid #e4a6b9;background:#fffaf3;box-shadow:0 5px 20px #40293622;padding:10px 13px;display:flex;align-items:center;gap:9px;text-align:left;color:#674555;font-size:12px;font-weight:750;cursor:pointer;line-height:1.45}
-.oshi-kim-location-control span:first-child{font-size:23px}
-.oshi-kim-location-control small{display:block;font-size:10px;color:#9f7282;margin-top:2px}
-.oshi-kim-location-control[hidden]{display:none!important}
-.oshi-kim-location-control:focus-visible{outline:3px solid #bd6d8b;outline-offset:3px}
-.oshi-location-note{font-size:11px;color:#8a6370;margin:6px 0 12px}

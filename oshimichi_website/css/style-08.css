@@ -1,7 +1,0 @@
-
-/* STEP03 map navigation: clear focus state and fallback controls. */
-#mapBox.oshi-map-selected{outline:3px solid #f1a9bf;outline-offset:4px;transition:outline-color .3s}
-.oshi-map-message{position:relative;display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:10px 0 12px;padding:12px 14px;background:#fff4de;border:1px solid #f0d6ce;border-radius:12px;font-size:12px;color:#6b4758;line-height:1.55}
-.oshi-map-message a{color:#9b4a6a;font-weight:800;text-decoration:underline}
-.oshi-map-message[hidden]{display:none!important}
-#spotList .spot-card .locate-spot:focus-visible{outline:3px solid #bf6e8c;outline-offset:2px}
