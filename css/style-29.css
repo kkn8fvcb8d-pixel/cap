@@ -1,0 +1,25 @@
+
+/* STEP 04: consistent action alignment across every saved place */
+#favorites .fav-list {max-width:none;gap:15px}
+#favorites .fav-item {display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:24px;row-gap:10px;padding:22px 25px;border-radius:21px;min-width:0}
+#favorites .fav-main {min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:7px}
+#favorites .fav-name {font-size:19px;line-height:1.35;overflow-wrap:anywhere}
+#favorites .fav-detail {font-size:13px;overflow-wrap:anywhere;line-height:1.55}
+#favorites .chip-status {display:inline-flex;max-width:100%;width:auto;align-self:flex-start;padding:7px 13px;margin-top:2px;border-radius:999px;font-size:12px;line-height:1.45;white-space:normal}
+#favorites .oshi-fav-actions {display:flex;gap:10px;align-items:center;justify-content:flex-end;flex-shrink:0}
+#favorites .oshi-fav-actions .soft-button {display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;min-width:90px;min-height:46px;margin:0;padding:11px 17px;border:1.5px solid #edbdca;border-radius:999px;background:#fff4de;color:#81596c;font-weight:750;font-size:13px;cursor:pointer;transition:background .15s,transform .15s}
+#favorites .oshi-fav-actions .soft-button:hover {background:#ffdee6;transform:translateY(-1px)}
+#favorites .oshi-fav-actions .oshi-fav-detail {background:#ffced8;border-color:#ffced8}
+#favorites .oshi-fav-actions .soft-button:focus-visible {outline:3px solid #c7829c;outline-offset:2px}
+/* STEP 05: permit native date/time controls and their translated options to fit cleanly */
+#course .course-settings>label {min-width:0}
+#course .course-settings select,#course .course-settings input {min-width:0;max-width:100%;width:100%;font:inherit}
+#course .course-settings select {overflow:hidden;text-overflow:ellipsis}
+@media(max-width:680px) {
+ #favorites .fav-item {padding:19px 17px;grid-template-columns:minmax(0,1fr);row-gap:15px}
+ #favorites .oshi-fav-actions {width:100%;justify-content:flex-end;gap:8px}
+ #favorites .oshi-fav-actions .soft-button {flex:1;min-width:0;max-width:180px;min-height:44px}
+ #course .course-settings {grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ #course .course-settings>label:first-child {grid-column:1/-1}
+}
+@media(max-width:360px){#course .course-settings{grid-template-columns:minmax(0,1fr)}#course .course-settings>label:first-child{grid-column:auto}}

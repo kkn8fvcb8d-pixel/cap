@@ -1,0 +1,8 @@
+
+#oshiStep06{width:100%;box-sizing:border-box}
+#oshiStep06 .step06-leg{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin:3px 0 3px 19px;padding:9px 16px 9px 24px;border-left:2px dashed #e3aec1;color:#866678;font-size:13px;font-weight:650}
+#oshiStep06 .step06-leg a{color:#b35e83;text-decoration:underline;text-underline-offset:3px}
+#oshiStep06 .step06-stop small{display:block;line-height:1.75;margin-top:5px;color:#85737b}
+#oshiStep06 .step06-stop a{display:inline-block;margin:10px 0 0;color:#ab6280;font-size:13px;font-weight:650}
+#oshiSaveArea .oshi-save-actions button{min-height:48px;cursor:pointer}
+#oshiSaveArea .oshi-progress-track{margin-top:18px}

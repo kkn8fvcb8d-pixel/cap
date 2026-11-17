@@ -1,0 +1,9 @@
+
+/* TWICE uploaded-photo cards: consistent photo geometry and crop */
+.member-card .member-photo{height:auto!important;aspect-ratio:4/5;min-height:0!important;width:100%;border-radius:13px;margin:8px 0 13px;overflow:hidden;background:#fff0f2}
+.member-card .member-photo img{width:100%;height:100%;object-fit:cover;object-position:center 24%;display:block}
+.member-card .member-photo img[src^="data:"]{object-position:center 22%}
+.member-card .member-photo .person-icon{font-size:42px}
+.member-card{min-height:0!important;padding:12px 12px 15px!important}
+.member-card strong{overflow-wrap:anywhere}
+@media(max-width:700px){.member-grid{gap:10px}.member-card .member-photo{aspect-ratio:4/5}.member-card{padding:9px 9px 13px!important}}

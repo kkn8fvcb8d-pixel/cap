@@ -1,0 +1,37 @@
+
+/* STEP 05 / STEP 06 shared visual system: same layout, palette and controls. */
+#oshiStep06.flow-page{display:none;min-height:calc(100svh - 82px);background:#FFF4DE;padding:32px 24px 90px}
+#oshiStep06.flow-page.active{display:block}
+#oshiStep06 .step06-shell{max-width:1080px;margin:auto}
+#oshiStep06 .flow-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:34px}
+#oshiStep06 #step06Back{background:#fff;border:1px solid #e9c5c6;border-radius:50px;padding:11px 19px;color:#805d67;font-size:inherit;font-weight:700}
+#oshiStep06 .flow-progress{font-size:12px;font-weight:800;color:#a17b85;letter-spacing:.12em}
+#oshiStep06 .step06-kicker{color:#b27085;font-size:11px;font-weight:800;letter-spacing:.18em}
+#oshiStep06 #step06Title{font-size:clamp(31px,5vw,52px);line-height:1.25;letter-spacing:-.05em;margin:12px 0;color:#433738;font-weight:800}
+#oshiStep06 #step06Title em{font-style:normal;color:#bd7189}
+#oshiStep06 #step06Intro{font-size:14px;line-height:1.8;color:#867276;margin:0 0 23px}
+#oshiStep06 .step06-panel{margin:20px 0 16px;background:#fff;border:0;border-radius:18px;padding:24px 26px;box-shadow:var(--shadow,0 6px 20px #76545a17)}
+#oshiStep06 .step06-panel h3{font-size:20px;color:#493b40;letter-spacing:-.03em;margin:0 0 10px}
+#oshiStep06 .step06-note{font-size:13px;color:#867276;line-height:1.8}
+#oshiStep06 .step06-stop{background:#fff;border:1px solid #f2e3e2;border-radius:18px;padding:19px 20px;margin:12px 0;display:flex;align-items:center;gap:16px}
+#oshiStep06 .step06-stop:last-child{border-bottom:1px solid #f2e3e2}
+#oshiStep06 .step06-number{background:#FFF0F3;color:#a85e7c;border-radius:999px;width:40px;height:40px;display:grid;place-items:center;font-size:14px;font-weight:800;flex:none}
+#oshiStep06 .step06-stop b{color:#433738;font-size:18px}
+#oshiStep06 .step06-stop small{font-size:12px;color:#937a83;margin-top:6px}
+#oshiStep06 .step06-stop a{color:#985377;font-size:13px}
+#oshiStep06 .step06-leg{background:#FFF9FA;border-left:4px dashed #E0A1BA;border-radius:0 14px 14px 0;padding:15px 19px;margin:7px 12px 7px 24px;color:#875d71;font-size:13px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#oshiStep06 .step06-leg a{color:#96516e;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+#oshiStep06 .step06-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:27px 0}
+#oshiStep06 .step06-actions button,.oshi-save-area .oshi-save-actions button{cursor:pointer;border:1px solid #FFCED8;border-radius:50px;padding:13px 21px;font-size:14px;font-weight:800;min-height:46px;box-shadow:none;transition:transform .15s ease,background .15s ease}
+#oshiStep06 #step06Edit,.oshi-save-area .oshi-save-actions #oshiSaveButton{background:#FFCED8;color:#68404e}
+#oshiStep06 #step06Delete{background:#fff;color:#86536a;border-color:#e9c5c6}
+#oshiStep06 .step06-actions button:hover,.oshi-save-area .oshi-save-actions button:hover{transform:translateY(-1px)}
+.oshi-save-area{margin:24px 0;background:#fff;border:1px solid #f1dce1;border-radius:18px;padding:23px 25px;box-shadow:var(--shadow,0 6px 20px #76545a17)}
+.oshi-save-area h3{color:#433738;font-size:20px;margin:0 0 8px}
+.oshi-save-area p{font-size:13px;color:#867276;line-height:1.8;margin:0 0 16px}
+.oshi-progress-track{height:12px;background:#fff0f3;border-radius:999px;overflow:hidden;border:1px solid #f2dce4}
+.oshi-progress-fill{background:linear-gradient(90deg,#ffced8,#c77d9b);height:100%;width:0;border-radius:999px}
+.oshi-progress-number{color:#ae6380;text-align:right;font-weight:800;font-size:14px;margin:8px 0}
+.oshi-save-area .oshi-save-actions{display:flex;justify-content:center;margin-top:18px}
+.oshi-save-area .oshi-save-actions #oshiSaveButton{width:auto;max-width:100%;padding:14px 30px}
+@media(max-width:760px){#oshiStep06.flow-page{min-height:calc(100svh - 66px);padding:22px 17px 65px}#oshiStep06 .flow-top{margin-bottom:25px}#oshiStep06 .step06-panel{padding:18px 15px}#oshiStep06 .step06-stop{padding:16px 13px}#oshiStep06 .step06-leg{margin-left:10px}#oshiStep06 .step06-actions button{flex:1;min-width:160px}.oshi-save-area{padding:19px 16px}}

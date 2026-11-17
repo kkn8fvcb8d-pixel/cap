@@ -1,0 +1,12 @@
+
+#courseResult #oshiSaveArea{display:block!important;max-width:850px;margin:28px 0 25px;padding:27px 29px;border:2px solid #d78fad;border-radius:23px;background:linear-gradient(145deg,#fff,#fff0f5);box-shadow:0 12px 28px rgba(147,72,99,.13);box-sizing:border-box}
+#oshiSaveArea #oshiSaveTitle{font-size:21px;line-height:1.4;font-weight:850;color:#754254;margin:0 0 9px}
+#oshiSaveArea #oshiSaveDesc{font-size:14px;margin:0 0 14px;line-height:1.7}
+#oshiSaveArea .oshi-save-actions{display:flex;justify-content:center;margin-top:14px}
+#oshiSaveArea #oshiSaveButton{display:block!important;width:100%;max-width:560px;padding:17px 20px;border:0;border-radius:15px;background:#a84575;color:white!important;font-size:17px;font-weight:850;box-shadow:0 6px 16px #b76f8d40}
+#oshiSaveArea #oshiSaveButton:hover{background:#923760;transform:translateY(-1px)}
+#oshiSaveArea #oshiSaveButton:disabled{cursor:progress;opacity:.8}
+#oshiSaveArea .oshi-progress-track{height:17px;border:1px solid #ead1dc;background:#eedee5;overflow:hidden;border-radius:999px}
+#oshiSaveArea .oshi-progress-fill{height:100%;width:0%;background:linear-gradient(90deg,#eac2d3,#c15c87);transition:none}
+#oshiSaveArea .oshi-progress-number{text-align:center;font-size:22px;color:#a84575;font-weight:850;font-variant-numeric:tabular-nums;margin-top:9px}
+@media(max-width:640px){#courseResult #oshiSaveArea{padding:22px 16px;margin:20px 0}#oshiSaveArea #oshiSaveButton{font-size:15px}}

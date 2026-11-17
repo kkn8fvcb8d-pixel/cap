@@ -1,0 +1,21 @@
+
+/* STEP 05: playful feedback while retaining native label/checkbox accessibility */
+#courseSelectList .fav-item{position:relative;isolation:isolate;transition:background-color .25s ease,border-color .25s ease,box-shadow .25s ease,transform .25s ease;border:2px solid transparent;overflow:visible}
+#courseSelectList .fav-item:has(.choose-box:checked){background:#fff3f6;border-color:#edb7c6;box-shadow:0 5px 20px rgba(173,92,124,.12)}
+#courseSelectList .fav-item:has(.choose-box:focus-visible){outline:3px solid #a85b7b;outline-offset:3px}
+#courseSelectList .choose-box{appearance:none;-webkit-appearance:none;width:28px;height:28px;flex-shrink:0;position:relative;border:2px solid #d8a1b2;border-radius:50%;background:#fff;cursor:pointer;display:inline-grid;place-items:center;transition:background .22s,border-color .22s,transform .22s,box-shadow .22s;margin:0}
+#courseSelectList .choose-box::after{content:'✓';display:block;color:white;font-weight:900;font-size:17px;line-height:1;opacity:0;transform:scale(.25) rotate(-25deg);transition:opacity .16s,transform .25s cubic-bezier(.2,1.8,.35,1)}
+#courseSelectList .choose-box:checked{background:#bc6688;border-color:#bc6688;box-shadow:0 3px 10px #bc66884d}
+#courseSelectList .choose-box:checked::after{opacity:1;transform:scale(1) rotate(0)}
+#courseSelectList .fav-controls>.fav-detail{transition:color .2s ease,font-weight .2s ease}
+#courseSelectList .fav-item:has(.choose-box:checked) .fav-controls>.fav-detail{color:#a34c72;font-weight:900}
+#courseSelectList .fav-item.oshi-visit-pop{animation:oshiVisitCardPop .54s cubic-bezier(.16,.84,.3,1)}
+#courseSelectList .fav-item.oshi-visit-pop .choose-box{animation:oshiVisitCheckPop .53s cubic-bezier(.15,1.5,.4,1)}
+#courseSelectList .fav-item.oshi-visit-off{animation:oshiVisitCardOff .35s ease}
+#courseSelectList .fav-item.oshi-visit-pop::before,#courseSelectList .fav-item.oshi-visit-pop::after{content:'✦';position:absolute;color:#d47e9d;font-size:20px;pointer-events:none;z-index:3;right:28px;top:-9px;animation:oshiVisitSpark .68s ease-out both}
+#courseSelectList .fav-item.oshi-visit-pop::after{content:'♥';right:4px;top:8px;font-size:14px;animation-delay:.08s}
+@keyframes oshiVisitCardPop{0%{transform:scale(1)}35%{transform:scale(1.018)}65%{transform:scale(.995)}100%{transform:scale(1)}}
+@keyframes oshiVisitCheckPop{0%{transform:scale(.65) rotate(-25deg)}45%{transform:scale(1.35) rotate(12deg)}75%{transform:scale(.92) rotate(-4deg)}100%{transform:scale(1)}}
+@keyframes oshiVisitCardOff{0%{transform:scale(1)}40%{transform:scale(.985)}100%{transform:scale(1)}}
+@keyframes oshiVisitSpark{0%{transform:translate(0,9px) scale(.35);opacity:0}25%{opacity:1}100%{transform:translate(10px,-22px) scale(1.15);opacity:0}}
+@media(prefers-reduced-motion:reduce){#courseSelectList .fav-item,#courseSelectList .choose-box,#courseSelectList .choose-box::after{animation:none!important;transition:none!important}#courseSelectList .fav-item::before,#courseSelectList .fav-item::after{animation:none!important;content:none!important}}

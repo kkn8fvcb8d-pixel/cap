@@ -1,0 +1,35 @@
+
+/* One unified STEP 03 detail dialog; later rules intentionally override legacy dialogs. */
+.oshi-unified-overlay{position:fixed;inset:0;background:rgba(48,31,40,.62);z-index:12000;display:flex;align-items:center;justify-content:center;padding:18px;}
+.oshi-unified-dialog{width:min(740px,100%);max-height:92dvh;overflow:auto;position:relative;border-radius:27px;background:#fff;box-shadow:0 24px 85px #3627354d;color:#40343a;}
+.oshi-unified-top{position:relative;padding:31px 32px 24px;background:linear-gradient(135deg,#fffdf9,#fff5ee 74%,#ffeaf0);}
+.oshi-unified-header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-right:102px;margin-bottom:15px;}
+.oshi-unified-group{color:#af7188;font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;}
+.oshi-unified-buttons{display:flex;gap:8px;position:absolute;top:23px;right:25px;}
+.oshi-unified-iconbutton{width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:white;border:1.5px solid #edccda;color:#9a6278;font-size:25px;cursor:pointer;box-shadow:0 4px 13px #a16d8120;transition:background .2s,color .2s;}
+.oshi-unified-iconbutton:hover{background:#fff0f4}.oshi-unified-iconbutton.oshi-saved{color:#e4558b;background:#fff0f5}
+.oshi-unified-title{font-size:clamp(24px,4.5vw,36px);line-height:1.22;letter-spacing:-.05em;font-weight:900;margin:0 0 22px;overflow-wrap:anywhere;}
+.oshi-unified-summary{background:#fff;border:1px solid #f3e3e7;border-radius:19px;padding:14px 19px;display:grid;gap:16px;}
+.oshi-unified-summaryline{display:grid;grid-template-columns:23px 1fr;align-items:start;gap:12px;font-size:14px;line-height:1.6;}
+.oshi-unified-summaryline svg{width:21px;height:21px;stroke:#a66c83;stroke-width:1.9;fill:none;stroke-linecap:round;stroke-linejoin:round;margin-top:1px;}
+.oshi-unified-summaryline strong{font-weight:800}.oshi-unified-muted{color:#907a83;font-size:12px;display:block;}
+.oshi-unified-source a{color:#a34e77;text-decoration:underline;text-underline-offset:3px;word-break:break-all;}
+.oshi-unified-tabs{display:flex;position:sticky;top:0;background:white;border-bottom:1px solid #f0e1e7;z-index:2;}
+.oshi-unified-tab{flex:1;background:white;border:0;border-bottom:3px solid transparent;padding:14px 5px;font-size:13px;font-weight:800;color:#897781;cursor:pointer;}
+.oshi-unified-tab[aria-selected=true]{color:#a84a76;border-bottom-color:#e9a4bc;}
+.oshi-unified-body{padding:25px 32px 31px;line-height:1.8;color:#5d4e57;font-size:14px;}
+.oshi-unified-body [hidden]{display:none!important;}
+.oshi-unified-details{display:grid;gap:11px;margin:15px 0;}
+.oshi-unified-detailrow{padding:12px 15px;background:#fffaf7;border-radius:12px;}
+.oshi-unified-detailrow b{display:block;color:#754e61;font-size:12px;margin-bottom:4px;}
+.oshi-unified-warning{background:#fff4de;border-radius:12px;padding:12px 14px;color:#735e5a;font-size:12px;margin-top:15px;}
+.oshi-unified-map{border:0;width:100%;height:235px;border-radius:14px;margin-top:15px;background:#fff4de;}
+.oshi-unified-photos{background:#fff4de;border-radius:15px;padding:35px;text-align:center;}
+.oshi-unified-fav-bounce{animation:oshiUnifiedBounce .57s cubic-bezier(.2,.9,.3,1.1)!important;}
+@keyframes oshiUnifiedBounce{0%{transform:scale(1)}27%{transform:scale(1.32) rotate(-12deg)}53%{transform:scale(.83) rotate(9deg)}76%{transform:scale(1.15)}100%{transform:scale(1)}}
+.oshi-unified-burst{position:fixed;pointer-events:none;z-index:13000;left:var(--x);top:var(--y);font-size:20px;color:#ea6c9e;animation:oshiUnifiedBurst .85s ease-out forwards;}
+@keyframes oshiUnifiedBurst{0%{opacity:0;transform:translate(-50%,-50%) scale(.35)}18%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1.05) rotate(15deg)}}
+.oshi-unified-toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,15px);opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;z-index:14000;background:#624557;color:white;padding:11px 19px;border-radius:99px;box-shadow:0 9px 30px #432b3a40;font-weight:800;font-size:13px;text-align:center;max-width:94vw;}
+.oshi-unified-toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:550px){.oshi-unified-overlay{padding:9px}.oshi-unified-top{padding:26px 17px 19px}.oshi-unified-body{padding:20px 17px}.oshi-unified-buttons{right:14px;top:14px}.oshi-unified-header{padding-right:95px}.oshi-unified-iconbutton{height:40px;width:40px}.oshi-unified-summary{padding:12px}}
+@media(prefers-reduced-motion:reduce){.oshi-unified-fav-bounce,.oshi-unified-burst{animation:none!important}}

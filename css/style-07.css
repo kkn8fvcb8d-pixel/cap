@@ -1,0 +1,7 @@
+
+/* Four-group collage: responsive image-only enhancement of STEP 00. */
+.hero-visual.oshi-hero-visual{overflow:hidden}
+.hero-visual .oshi-hero-collage{width:min(122%,860px);max-width:none;max-height:600px;height:auto;object-fit:contain;object-position:center center;filter:drop-shadow(0 14px 17px rgba(110,71,88,.12))}
+@media(max-width:900px){.hero-visual .oshi-hero-collage{width:115%;max-height:470px}}
+@media(max-width:700px){.hero-visual.oshi-hero-visual{min-height:260px;padding:18px 2px 22px}.hero-visual .oshi-hero-collage{width:min(107%,600px);max-height:350px}}
+@media(max-width:390px){.hero-visual.oshi-hero-visual{min-height:215px}.hero-visual .oshi-hero-collage{max-height:300px}}

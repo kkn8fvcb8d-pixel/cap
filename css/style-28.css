@@ -1,0 +1,11 @@
+
+.oshi-original-program{display:grid;gap:6px;padding:11px 0 13px;border-bottom:1px solid #f1e8ec;min-width:0}
+.oshi-original-program:first-child{padding-top:0}.oshi-original-program:last-child{border-bottom:0;padding-bottom:0}
+.oshi-original-program-name{font-size:15px;font-weight:800;color:#48373f;line-height:1.5}
+.oshi-original-program-url{display:grid;gap:4px;min-width:0;color:#a34a74!important;text-decoration:none!important;padding:9px 11px;background:#fff2f6;border:1px solid #eac3d0;border-radius:11px}
+.oshi-original-program-url:hover,.oshi-original-program-url:focus-visible{background:#ffe2ec;outline:2px solid #d391a9;outline-offset:2px}
+.oshi-original-program-action{font-size:13px;font-weight:850}.oshi-original-url-text{font-size:11px;overflow-wrap:anywhere;word-break:break-all;text-decoration:underline;text-underline-offset:2px;color:#795a6a}
+.oshi-original-confirmed{color:#9b4266!important;font-weight:850}.oshi-original-caveat{display:block;font-size:11px;line-height:1.65;margin-top:7px;color:#887981}
+.oshi-original-extra{display:grid;gap:5px;margin-top:10px}.oshi-original-extra a,.oshi-original-summary-link{color:#96526d!important;font-weight:750;text-underline-offset:3px;overflow-wrap:anywhere}
+.oshi-original-missing{color:#8b7480}.oshi-original-summary-link{display:inline-block;margin-top:5px;font-size:12px}
+@media(max-width:520px){.oshi-original-program-name{font-size:14px}.oshi-original-program-url{padding:10px}.oshi-original-url-text{font-size:10px}}

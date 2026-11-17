@@ -1,0 +1,20 @@
+
+/* Detail modal: favorite control anchored at the upper right. */
+.oshi-detail-panel{position:relative}
+.oshi-detail-heart{right:18px!important;top:18px!important;z-index:9!important;isolation:isolate}
+.oshi-detail-heart.is-saved,.oshi-original-fav.is-saved{background:#ffced8!important;color:#b54476!important}
+.oshi-detail-heart,.oshi-original-fav{transition:background-color .22s,color .22s,box-shadow .22s}
+.oshi-detail-heart.heart-bounce,.oshi-original-fav.heart-bounce{animation:oshi-detail-heart-bounce .62s cubic-bezier(.18,.85,.25,1.15) both}
+@keyframes oshi-detail-heart-bounce{0%{transform:scale(1)}24%{transform:scale(1.30) rotate(-10deg)}49%{transform:scale(.89) rotate(9deg)}75%{transform:scale(1.13)}100%{transform:scale(1)}}
+.oshi-heart-spark{position:fixed;z-index:999999;pointer-events:none;color:#ea74a4;font-size:21px;font-weight:bold;left:var(--x);top:var(--y);animation:oshi-detail-heart-spark .8s ease-out forwards}
+@keyframes oshi-detail-heart-spark{0%{opacity:0;transform:translate(-50%,-50%) scale(.3)}15%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) rotate(15deg) scale(1.12)}}
+.oshi-fav-notice{position:fixed;bottom:22px;left:50%;transform:translate(-50%,18px);opacity:0;pointer-events:none;z-index:9999999;background:#5b3c4a;color:white;border-radius:100px;padding:11px 19px;font-size:13px;font-weight:700;box-shadow:0 6px 20px #38253255;transition:opacity .2s,transform .2s;white-space:nowrap;max-width:95vw;text-align:center}
+.oshi-fav-notice.shown{opacity:1;transform:translate(-50%,0)}
+/* Non-TWICE details also receive an upper-right favorite button. */
+.detail-dialog{position:relative!important}
+.detail-dialog>.detail-close{margin-right:55px}
+.oshi-original-fav{position:absolute;right:17px;top:15px;border:1px solid #f0c6d3;border-radius:50%;width:46px;height:46px;background:white;color:#b96586;font-size:27px;cursor:pointer;display:grid;place-items:center;z-index:4;box-shadow:0 3px 12px #5e495322}
+.detail-dialog .detail-save{display:none!important}
+.oshi-location-station{line-height:1.7}
+.oshi-location-station small{display:block;font-size:11px;color:#937482;margin-top:3px}
+@media(prefers-reduced-motion:reduce){.oshi-detail-heart.heart-bounce,.oshi-original-fav.heart-bounce,.oshi-heart-spark{animation:none!important}}

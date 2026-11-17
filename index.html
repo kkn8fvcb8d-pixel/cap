@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#FFF4DE" />
+<title>推し道 | あなたの「好き」を旅に</title>
+<script id="oshi-source-data-bootstrap" src="js/script-01.js"></script>
+
+
+
+
+<link rel="stylesheet" href="css/style-01.css">
+
+
+<link rel="stylesheet" href="css/style-02.css">
+<link rel="stylesheet" href="css/style-03.css">
+<link rel="stylesheet" href="css/style-04.css">
+<link rel="stylesheet" href="css/style-05.css">
+<link rel="stylesheet" href="css/style-06.css">
+<link rel="stylesheet" href="css/style-07.css">
+
+<link rel="stylesheet" href="css/style-08.css">
+
+<link rel="stylesheet" href="css/style-09.css">
+
+<link rel="stylesheet" href="css/style-10.css">
+
+<link rel="stylesheet" href="css/style-11.css">
+
+<link rel="stylesheet" href="css/style-12.css">
+<link rel="stylesheet" href="css/style-13.css">
+<link rel="stylesheet" href="css/style-14.css">
+</head>
+<body>
+<header><div class="nav"><button class="logo" id="logoHome" type="button" aria-label="推し道 · 홈으로 이동" title="Home"><span class="logo-jp">推し<span>道</span><i class="logo-spark" aria-hidden="true">✦</i></span><span class="logo-en">OSHIMICHI</span></button><div class="nav-right"><span class="nav-label">ソウル聖地巡礼ガイド</span><nav class="oshi-quick-nav" aria-label="My pages">
+  <button type="button" class="oshi-quick-link" id="navFavorites" data-go="favorites" aria-label="나의 즐겨찾기"><span aria-hidden="true">♡</span> <span class="oshi-quick-text">お気に入り</span></button>
+  <button type="button" class="oshi-quick-link" id="navCourse" data-go="course" aria-label="나의 코스"><span aria-hidden="true">✧</span> <span class="oshi-quick-text">マイコース</span></button>
+</nav><button class="language" id="langSwitch" aria-label="언어 변경">한국어 / KR</button></div></div></header>
+
+<main>
+<section class="hero" id="home">
+ <div class="hero-copy"><div class="copy-inner">
+  <div class="eyebrow">K-POP × SEOUL TRAVEL</div>
+  <div class="hero-brand"><h1>推し<span>道</span></h1><span class="hero-star" aria-hidden="true">✦</span></div><p class="romaji">OSHIMICHI</p>
+  <h2>推しの足跡をたどる、<br><em>あなただけのソウル旅。</em></h2>
+  <p class="description">推しの聖地を見つけて、行きたい場所を選ぼう。</p>
+  <button class="cta" id="start">聖地巡礼をはじめる <span aria-hidden="true">→</span></button>
+ </div></div>
+ <div class="hero-visual oshi-hero-visual" aria-label="TWICEとStray Kidsのコラージュ">
+  <div class="oshi-hero-aura" aria-hidden="true"></div>
+  <div class="oshi-hero-sticker oshi-hero-sticker-top" aria-hidden="true">✦ &nbsp; K-POP × SEOUL</div>
+  <img class="oshi-hero-collage" src="assets/embedded-image-01.webp" alt="TWICEとStray Kidsが一緒に並ぶパステルカラーのコラージュ" decoding="async" fetchpriority="high">
+  <div class="oshi-hero-caption" aria-hidden="true"><span>♡</span> YOUR OSHI, YOUR SEOUL <span>✦</span></div>
+ </div>
+</section>
+<section class="benefits" aria-label="サービスの特徴"><div class="benefits-inner">
+ <div class="benefit"><div class="benefit-icon" aria-hidden="true">✓</div><div><strong>出典がわかる</strong><p>元の動画やSNSの情報を確認できます。</p></div></div>
+ <div class="benefit"><div class="benefit-icon" aria-hidden="true">文</div><div><strong>日本語で安心</strong><p>場所や訪問情報を日本語でチェック。</p></div></div>
+ <div class="benefit"><div class="benefit-icon" aria-hidden="true">↗</div><div><strong>自分だけのルート</strong><p>行きたい聖地を選んで旅の順番を計画。</p></div></div>
+</div></section>
+<section class="selection" id="selection" aria-hidden="true">
+ <div class="selection-inner">
+  <div class="selection-nav"><button class="back" id="back" aria-label="ホームに戻る">← <span>戻る</span></button><span class="selection-index">01 <span>/ 03</span></span></div>
+  <div class="selection-intro"><span class="step"><span class="step-line"></span> STEP 01 · PICK YOUR ARTIST</span>
+  <h2>誰と、ソウルを<span class="title-heart">♡</span><br><em>旅したい？</em></h2>
+  <p class="sub">まずは好きなグループを選んでね。<br>あなたの推しの足跡を探しに行こう。</p></div>
+  <div class="selection-rule"><span id="pickPrompt">CHOOSE YOUR FAVORITE</span><span>✦ &nbsp; ✦ &nbsp; ✦</span></div>
+  <div class="gender-pick" id="genderPick"><button type="button" data-gender="girls">♡ 女性アイドル</button><button type="button" data-gender="boys">✦ 男性アイドル</button></div><div class="group-grid">
+   <button class="group twice" data-name="TWICE" aria-label="TWICEを選択">
+    <span class="group-art" aria-hidden="true"><span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span><span class="art-word twice-word">TWICE</span><span class="art-mini">ONE IN A MILLION</span><span class="art-symbol">♡</span></span>
+    <span class="group-info"><span class="group-name"><strong>TWICE</strong><small>ガールズグループ</small></span><span class="group-arrow" aria-hidden="true">↗</span></span>
+   </button>
+   <button class="group skz" data-name="Stray Kids" aria-label="Stray Kidsを選択">
+    <span class="group-art" aria-hidden="true"><span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span><span class="art-word skz-word">Stray<br>Kids<span>✦</span></span><span class="art-mini">YOU MAKE STRAY KIDS STAY</span></span>
+    <span class="group-info"><span class="group-name"><strong>Stray Kids</strong><small>ボーイズグループ</small></span><span class="group-arrow" aria-hidden="true">↗</span></span>
+   </button>
+   <button class="group ive" data-name="IVE" aria-label="IVEを選択">
+    <span class="group-art" aria-hidden="true"><span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span><span class="art-word ive-word">IVE<span> ♡</span></span><span class="art-mini">I HAVE IVE</span></span>
+    <span class="group-info"><span class="group-name"><strong>IVE</strong><small data-group-kind="girls">ガールズグループ</small></span><span class="group-arrow" aria-hidden="true">↗</span></span>
+   </button>
+   <button class="group seventeen" data-name="SEVENTEEN" aria-label="SEVENTEENを選択">
+    <span class="group-art" aria-hidden="true"><span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span><span class="art-word seventeen-word">SEVEN<br>TEEN<span> ✦</span></span><span class="art-mini">SAY THE NAME · SEVENTEEN</span></span>
+    <span class="group-info"><span class="group-name"><strong>SEVENTEEN</strong><small data-group-kind="boys">ボーイズグループ</small></span><span class="group-arrow" aria-hidden="true">↗</span></span>
+   </button>
+  </div>
+  <div class="selection-bottom"><span class="tiny-heart">♡</span><p>推しを選ぶと、関連する聖地を探せるよ。</p></div>
+  <section class="future-artists" id="futureArtists" aria-labelledby="futureTitle"><h3 class="future-head" id="futureTitle">今後追加予定のアーティスト</h3><p class="future-sub" id="futureSub">現在はTWICE・Stray Kids・IVE・SEVENTEENのメンバー選択に対応しています。IVE・SEVENTEENの聖地情報は準備中です。</p><div class="future-grid"><button type="button" class="future-card" data-future-card="girls" disabled aria-disabled="true"><span class="future-card-icon" aria-hidden="true">♡</span><strong data-future="girls">女性グループ</strong><span class="future-pill">Coming Soon</span></button><button type="button" class="future-card" data-future-card="boys" disabled aria-disabled="true"><span class="future-card-icon" aria-hidden="true">✦</span><strong data-future="boys">男性グループ</strong><span class="future-pill">Coming Soon</span></button></div></section>
+  <div class="notice" id="notice" role="status" aria-live="polite"></div>
+ </div>
+</section>
+
+<section class="member-page" id="members" aria-hidden="true">
+ <div class="member-wrap">
+  <div class="selection-nav"><button class="back" id="memberBack">← <span data-i18n="back">戻る</span></button><span class="selection-index">02 <span>/ 03</span></span></div>
+  <div class="member-header"><span class="step">✦ &nbsp; STEP 02 · PICK YOUR BIAS</span><h2 data-i18n-html="memberTitle">あなたの<em>推し</em>は誰？ ♡</h2><p data-i18n-html="memberDesc">好きなメンバーを複数選べるよ。<br>「全員」はまとめて表示されるよ！</p></div>
+  <div class="selected-band"><span data-i18n="selectedGroup">選んだグループ</span> · <strong id="groupLabel">TWICE</strong></div>
+  <div class="member-grid" id="memberGrid"></div><p class="photo-library-note" id="photoNote"></p>
+  <div class="member-footer"><button class="cta" id="memberNext" disabled><span data-i18n="memberNext">この推しで進む</span> <span aria-hidden="true">→</span></button></div>
+  <p class="member-caption" data-i18n="memberFoot">メンバーはいつでも選び直せるよ ♡</p>
+  <div class="member-result" id="memberResult" role="status" aria-live="polite"></div>
+ </div>
+</section>
+
+<section class="flow-page" id="spots" aria-hidden="true"><div class="flow-shell">
+ <div class="flow-top"><button class="flow-back" data-go="members">← <span data-x="back">戻る</span></button><span class="flow-progress">03 / 05 · MAP</span></div>
+ <span class="flow-eyebrow">✦ STEP 03 · SEICHI MAP</span><h2 class="flow-heading" data-x="mapTitle">推しの<em>聖地マップ</em> ♡</h2><p class="flow-sub" data-x="mapDesc">行きたい場所を見つけて♡を押すと、お気に入りへ進みます。</p>
+ <div class="flow-identity" id="spotIdentity"></div><div class="geo-panel"><div><strong id="geoTitle">📍 現在地から探す</strong><p id="geoStatus" role="status" aria-live="polite">位置情報を許可すると近くの聖地から表示します。</p></div><button class="pink-button" id="findNearby" type="button">◎ 現在地を取得</button></div><div class="flow-toolbar"><input class="search-input" id="spotSearch" data-placeholder="search" placeholder="エリア・場所名で検索" aria-label="場所を検索"><span class="flow-count" id="spotCount"></span></div>
+ <div class="extra-filters" id="spotFilters"><label><span id="categoryLabel">カテゴリー</span><select id="categoryFilter"><option value="all">すべて</option><option value="filming">撮影地</option><option value="cafe">カフェ</option><option value="restaurant">飲食店</option><option value="other">その他</option></select></label><label class="check-filter"><input id="verifiedOnly" type="checkbox"><span id="verifiedLabel">出典確認済のみ</span></label></div><div class="manual-wrap"><label for="manualArea" id="manualLabel">位置情報が使えない場合：</label><select id="manualArea"><option value="">地域を選択</option><option value="hongdae">弘大 / 홍대</option><option value="myeongdong">明洞 / 명동</option><option value="gangnam">江南 / 강남</option><option value="seongsu">聖水 / 성수</option><option value="jamsil">蚕室 / 잠실</option></select></div><div class="map-layout"><div class="map-box" id="mapBox"><div id="spotMap" role="region" aria-label="ソウル聖地デモマップ"></div><div class="map-fallback" id="mapFallbackAlt" aria-live="polite"></div></div><div class="spot-list" id="spotList"></div></div>
+ <div class="flow-actionbar"><button class="outline-button" data-go="favorites" data-x="viewFavorites">♡ お気に入りを見る</button></div><p class="flow-note" data-x="demoNotice">デモ用の架空スポットです。アーティストの訪問や営業状況を確認した実在の聖地ではありません。</p>
+</div></section>
+<section class="flow-page" id="favorites" aria-hidden="true"><div class="flow-shell">
+ <div class="flow-top"><button class="flow-back" data-go="spots">← <span data-x="back">戻る</span></button><span class="flow-progress">04 / 05 · FAVORITES</span></div>
+ <span class="flow-eyebrow">♡ STEP 04 · MY FAVORITES</span><h2 class="flow-heading" data-x="favTitle">わたしの<em>お気に入り</em></h2><p class="flow-sub" data-x="favDesc">気になる聖地を保存しました。追加したいときはマップに戻ろう。</p>
+ <div class="fav-list" id="favoriteList"></div><div class="flow-actionbar"><button class="outline-button" data-go="spots" data-x="addMore">＋ もっと聖地を探す</button><button class="pink-button" id="toCourse" data-x="toCourse">今日のコースへ →</button></div>
+</div></section>
+<section class="flow-page" id="course" aria-hidden="true"><div class="flow-shell">
+ <div class="flow-top"><button class="flow-back" data-go="favorites">← <span data-x="back">戻る</span></button><span class="flow-progress">05 / 05 · TODAY'S COURSE</span></div>
+ <span class="flow-eyebrow">✦ STEP 05 · TODAY'S COURSE</span><h2 class="flow-heading" data-x="courseTitle">今日の<em>巡礼コース</em> ✧</h2><p class="flow-sub" data-x="courseDesc">お気に入りから今日行く場所を選んで、訪問順を作ろう。</p>
+ <div class="course-config"><strong id="configTitle">旅の条件</strong><div class="course-settings">
+<label><span id="originLabel">出発地点</span><select id="originSelect"><option value="current">現在地・指定地域</option><option value="hongdae">弘大</option><option value="myeongdong">明洞</option><option value="gangnam">江南</option><option value="seongsu">聖水</option><option value="jamsil">蚕室</option></select></label>
+<label><span id="dateLabel">旅行日</span><input type="date" id="travelDate"></label>
+<label><span id="startLabel">開始時間</span><input type="time" id="travelTime" value="10:00"></label>
+<label><span id="durationLabel">滞在できる時間</span><select id="durationSelect"><option value="120">2時間</option><option value="180">3時間</option><option value="240">半日（4時間）</option><option value="480" selected>1日（8時間）</option></select></label>
+<label><span id="travelModeLabel">移動方法</span><select id="travelMode"><option value="walk">徒歩</option><option value="transit">公共交通</option></select></label>
+</div><div class="date-hint" id="timeDisclaimer">移動時間は実際の経路ではなく仮の余裕時間です。</div></div><div class="fav-list" id="courseSelectList"></div><div class="flow-actionbar"><button class="pink-button" id="createCourse" data-x="makeCourse">選んだ場所でコースを作る →</button></div><div class="course-result" id="courseResult" aria-live="polite"></div>
+ <p class="flow-note" data-x="routeNotice">デモ版：訪問順は地点間の直線距離に基づく目安です。実際の移動時間や営業情報は反映されません。</p>
+ </div></section>
+
+<section id="oshiStep06" class="flow-page" aria-hidden="true"><div class="flow-shell step06-shell"><div class="flow-top"><button type="button" class="flow-back" id="step06Back">← <span data-x="back">戻る</span></button><span class="flow-progress">06 / 06 · MY OSHI ROUTE</span></div><span class="flow-eyebrow step06-kicker">✦ STEP 06 · MY OSHI ROUTE</span><h2 class="flow-heading" id="step06Title">나의 <em>성지순례 코스</em> ✧</h2><p class="flow-sub" id="step06Intro">확정한 방문 순서를 언제든 다시 확인할 수 있어요.</p><div id="step06Contents"></div><div class="flow-actionbar step06-actions"><button type="button" class="pink-button" id="step06Edit">방문 순서 다시 편집</button><button type="button" class="outline-button" id="step06Delete">저장된 코스 삭제</button></div></div></section>
+</main>
+<footer class="footer"><b>推し道 · OSHIMICHI</b><br>推しの足跡から、旅がはじまる。</footer>
+<script src="js/script-02.js"></script>
+<script src="js/script-03.js"></script>
+<script src="js/script-04.js"></script>
+<script src="js/script-05.js"></script>
+<script src="js/script-06.js"></script>
+
+<script src="js/script-07.js"></script>
+<script src="js/script-08.js"></script>
+
+<script src="js/script-09.js"></script>
+
+<script src="js/script-10.js"></script>
+
+<link rel="stylesheet" href="css/style-15.css">
+<script src="js/script-11.js"></script>
+
+<link rel="stylesheet" href="css/style-16.css">
+<script src="js/script-12.js"></script>
+
+<link rel="stylesheet" href="css/style-17.css">
+<script src="js/script-13.js"></script>
+
+<link rel="stylesheet" href="css/style-18.css">
+<script src="js/script-14.js"></script>
+
+<link rel="stylesheet" href="css/style-19.css">
+<script src="js/script-15.js"></script>
+\n<link rel="stylesheet" href="css/style-20.css">
+<script src="js/script-16.js"></script>
+
+<link rel="stylesheet" href="css/style-21.css">
+<script src="js/script-17.js"></script>
+<link rel="stylesheet" href="css/style-22.css">
+
+
+<link rel="stylesheet" href="css/style-23.css">
+
+<link rel="stylesheet" href="css/style-24.css">
+
+<script id="oshi-step01-group-photo-cover-script" src="js/script-18.js"></script>
+
+<link rel="stylesheet" href="css/style-25.css">
+
+<link rel="stylesheet" href="css/style-26.css">
+<script id="oshi-twice-reference-photo-loader" src="js/script-19.js"></script>
+<script src="js/script-20.js"></script>
+
+<script src="js/script-21.js"></script>
+
+<script id="oshi-seventeen-venue-data" src="js/script-22.js"></script>
+
+<script id="oshi-ive-places-photos" src="js/script-23.js"></script>
+<link rel="stylesheet" href="css/style-27.css">
+<link rel="stylesheet" href="css/style-28.css">
+<script id="oshi-original-source-links-js" src="js/script-24.js"></script>
+<script src="js/script-25.js"></script>
+
+<link rel="stylesheet" href="css/style-29.css">
+<script id="oshi-step45-polish-js" src="js/script-26.js"></script>
+
+
+<script id="oshi-step05-visit-motion-js" src="js/script-27.js"></script>
+<link rel="stylesheet" href="css/style-30.css">
+
+<script id="oshi-step06-script" src="js/script-28.js"></script>
+<link rel="stylesheet" href="css/style-31.css">
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+/* Photo-first editorial layout requested for STEP 03 details. */
+.oshi-editorial-dialog{width:min(820px,100%);background:#fff;max-height:95dvh;border-radius:24px;overflow:auto;}
+.oshi-editorial-hero{position:relative;min-height:clamp(520px,76vh,740px);background:#eac7d1;background-image:linear-gradient(145deg,#f9dce4,#f8edd8);background-size:cover;background-position:center 24%;display:flex;align-items:flex-end;padding:95px 28px 25px;}
+.oshi-editorial-hero:has(.oshi-editorial-photo-caption){isolation:isolate}
+.oshi-editorial-back{position:absolute;top:22px;left:23px;z-index:3;width:52px;height:52px;border:0;border-radius:50%;background:#fff;color:#24252a;font-size:29px;cursor:pointer;box-shadow:0 4px 14px #0002}
+.oshi-editorial-dialog .oshi-unified-buttons{top:22px;right:23px;z-index:4;}
+.oshi-editorial-dialog .oshi-unified-iconbutton{border:0;border-radius:50%;width:52px;height:52px;color:#24252a;box-shadow:0 4px 14px #0002;font-size:29px}
+.oshi-editorial-dialog .oshi-unified-heart.oshi-saved{color:#df6493;background:#fff0f5}
+.oshi-editorial-card{position:relative;z-index:2;background:#fff;border-radius:25px;padding:25px 30px 28px;width:100%;box-shadow:0 7px 24px #281e242e;}
+.oshi-editorial-card .oshi-unified-group{font-size:12px;letter-spacing:.09em;margin-bottom:8px;}
+.oshi-editorial-card .oshi-unified-title{font-size:clamp(25px,4.4vw,37px);margin:0 0 18px;color:#26252b;letter-spacing:-.045em}
+.oshi-editorial-summary{display:grid;gap:12px}
+.oshi-editorial-summary .oshi-unified-summaryline{font-size:15px;grid-template-columns:22px 1fr;gap:13px;color:#29272b;line-height:1.45}
+.oshi-editorial-summary .oshi-unified-summaryline svg{stroke:#25252b;stroke-width:2}
+.oshi-editorial-summary .oshi-unified-muted{font-size:11px;color:#847780;margin-top:3px;}
+.oshi-editorial-dialog .oshi-unified-tabs{position:relative;top:auto;background:white;border-bottom:1px solid #eee;}
+.oshi-editorial-dialog .oshi-unified-tab{font-size:15px;padding:17px 8px;color:#8b8790}
+.oshi-editorial-dialog .oshi-unified-tab[aria-selected=true]{color:#242429;border-bottom-color:#26252b;}
+.oshi-editorial-photo-caption{position:absolute;right:30px;top:86px;padding:5px 10px;border-radius:30px;background:#ffffffce;color:#665961;font-size:10px;font-weight:700;}
+@media(max-width:620px){
+ .oshi-unified-overlay{padding:0}
+ .oshi-editorial-dialog{width:100%;height:100dvh;max-height:100dvh;border-radius:0}
+ .oshi-editorial-hero{padding:95px 15px 20px;min-height:clamp(520px,76vh,750px)}
+ .oshi-editorial-card{padding:21px 20px 24px;border-radius:23px}
+ .oshi-editorial-back{left:16px;top:18px;width:45px;height:45px}
+ .oshi-editorial-dialog .oshi-unified-buttons{top:18px;right:16px;}
+ .oshi-editorial-dialog .oshi-unified-iconbutton{width:45px;height:45px}
+ .oshi-editorial-photo-caption{right:19px;top:72px}
+}

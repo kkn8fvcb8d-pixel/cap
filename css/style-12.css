@@ -1,0 +1,6 @@
+
+/* Consistent typographic four-point star in place of platform-dependent starburst. */
+.logo-spark,.hero-star,.oshi-hero-sticker,.oshi-hero-caption span,.selection-rule span:last-child{font-family:Arial,"Helvetica Neue",sans-serif;font-variant-emoji:text;}
+.hero-star{font-size:23px;transform:rotate(-10deg);color:#c57b98;}
+.logo-spark{font-size:11px;right:-13px;top:-5px;}
+@media(max-width:700px){.hero-star{font-size:19px}}

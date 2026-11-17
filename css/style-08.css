@@ -1,0 +1,6 @@
+
+.oshi-editorial-hero.oshi-has-place-photo{background-size:cover!important;background-position:center center!important}
+.oshi-unified-photos:has(.oshi-proof-figure){padding:0!important;display:block!important;background:transparent!important;border:0!important}
+.oshi-proof-figure{margin:0;width:100%;display:grid;gap:12px}
+.oshi-proof-direct{display:block;width:100%;max-height:650px;object-fit:contain;border-radius:18px;background:#fff3e8}
+.oshi-proof-figure figcaption{font-size:12px;line-height:1.6;color:#826e78;text-align:center;padding:0 8px 12px}

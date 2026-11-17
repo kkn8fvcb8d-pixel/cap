@@ -1,0 +1,25 @@
+
+/* Use the exact map-pin visual language in the STEP 05 recommendation list. */
+.oshi-improved-course{gap:0;max-width:850px}
+.oshi-course-spot{margin:0;gap:12px;position:relative;align-items:center;padding:16px 18px}
+.oshi-course-pin{width:46px;height:46px;border-radius:50% 50% 50% 9px;border:2px solid #cf8fa7;background:#fff;display:grid;place-items:center;box-shadow:0 3px 11px #593c4a24;font-size:25px;flex-shrink:0;transform:rotate(-45deg);line-height:1}
+.oshi-course-pin{font-family:'Apple Color Emoji','Segoe UI Emoji',sans-serif}
+.oshi-course-pin-emoji{display:block;transform:rotate(45deg)}
+.oshi-course-sequence{font-size:12px;font-weight:900;color:#a66179;background:#fff2f5;padding:6px 9px;border-radius:99px;flex-shrink:0}
+.oshi-course-spot-name{font-size:15px;color:#503b48;overflow-wrap:anywhere}
+.oshi-course-spot .course-main{flex:1;min-width:0;gap:5px}
+.oshi-course-spot .course-main small{font-size:11px;line-height:1.55;color:#8f747d}
+.oshi-course-spot .course-controls{margin-left:0;flex-shrink:0}
+.oshi-route-leg{margin:5px 20px 5px 43px;padding:12px 15px;border-left:3px dashed #dba9b9;background:#fff9fa;border-radius:0 15px 15px 0;display:grid;gap:7px}
+.oshi-leg-heading{display:flex;align-items:center;gap:10px}
+.oshi-leg-heading b{display:block;font-size:12px;color:#765267}
+.oshi-leg-heading small{display:block;font-size:11px;color:#99828c;margin-top:3px}
+.oshi-leg-mode{font-size:22px;width:35px;height:35px;display:grid;place-items:center;border-radius:50%;background:#ffebf1}
+.oshi-leg-details{margin:0;font-size:11px;line-height:1.7;color:#816f75}
+.oshi-leg-link{display:inline-flex;align-items:center;justify-content:center;justify-self:start;text-decoration:none;background:#a64b73;color:white;border-radius:30px;padding:10px 14px;font-size:12px;font-weight:800;min-height:39px}
+.oshi-leg-link:hover{background:#8f365d}
+.oshi-leg-link:focus-visible{outline:3px solid #ad6587;outline-offset:3px}
+.oshi-course-map-caption,.oshi-no-origin{font-size:12px;line-height:1.65;color:#876d78}
+.oshi-course-map-fallback{height:auto;min-height:90px;padding:16px 19px;background:#fffaf8;line-height:2;color:#765267}
+.oshi-course-map-fallback p{margin:0 0 8px}
+@media(max-width:640px){.oshi-course-spot{gap:7px;padding:12px 10px}.oshi-course-pin{width:37px;height:37px;font-size:21px}.oshi-course-sequence{font-size:10px;padding:4px 6px}.oshi-course-spot-name{font-size:13px}.oshi-course-spot .course-controls{width:100%;margin-left:44px;justify-content:flex-start}.oshi-route-leg{margin-left:22px;margin-right:5px;padding:12px}.oshi-leg-link{width:100%}}
